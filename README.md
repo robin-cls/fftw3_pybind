@@ -3,6 +3,8 @@
 For a simple FFT computation, we observed some differences between the C program call and the
 Python call.
 
+The build environment needs cmake, pybind11 and fftw3 in it
+
 Build can be reproduced by cleaning the build folder and doing the following :
 ```
 cd build
