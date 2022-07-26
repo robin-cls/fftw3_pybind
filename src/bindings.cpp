@@ -83,16 +83,17 @@ void foo() {
 
   fftw_print_plan(plan);
   fftw_execute(plan);
-
-  fftw_destroy_plan(plan);
-  fftw_free(in);
-  fftw_free(out);
-  
+ 
   printf("\n");
   for(int Index = 0; Index < N; Index++)
   {
     printf("%.40f, %.40f\n", out[Index][0], out[Index][1]);
   }
+
+  fftw_destroy_plan(plan);
+  fftw_free(in);
+  fftw_free(out);
+ 
 }
 
 
